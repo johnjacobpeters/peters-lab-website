@@ -25,7 +25,7 @@ The Peters Lab explores the mechanisms of how memories are formed. We study how 
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/schematic.png"
   link="research"
   title="Our Research"
   text=text
