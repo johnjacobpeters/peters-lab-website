@@ -1,14 +1,33 @@
-# Manually-added publications and other citable works.
+# Manually-added publications, and extra fields for imported ones.
 #
 # Most publications are imported automatically from the lab's ORCID record
-# (see _data/orcid.yaml). Add an entry here for works ORCID misses, or to
-# attach an image, description, tags, or extra buttons to a paper.
+# (see _data/orcid.yaml). An entry here with a matching id is merged into the
+# imported citation, which is how preview images and tags get attached.
 
-# Also imported from ORCID; listed here only to attach tags.
+# --- Biology research ---
+
+- id: doi:10.1016/j.jsb.2022.107851
+  image: images/citations/subtomogram-averaging.jpg
+  tags:
+    - cryo-EM
+
+- id: doi:10.3389/fnmol.2021.754631
+  image: images/citations/ampa-vesicle-proteome.jpg
+  tags:
+    - synaptic biology
+
+# --- Science education research ---
+
 - id: doi:10.1371/journal.pone.0346127
+  image: images/projects/genai-blooms.png
   tags:
     - science education
     - generative AI
+
+- id: doi:10.1128/jmbe.00005-24
+  image: images/posts/environmental-justice-case-study.jpg
+  tags:
+    - science education
 
 # No DOI, so the metadata is given manually.
 - title: "Getting students excited about introductory biology"
@@ -17,5 +36,6 @@
   publisher: ASBMB Today
   date: 2026-04-08
   link: https://www.asbmb.org/asbmb-today/opinions/040826/getting-students-excited-introductory-biology
+  image: images/posts/asbmb-today-perspective.jpg
   tags:
     - science education

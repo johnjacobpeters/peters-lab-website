@@ -22,3 +22,22 @@ li {
     margin: 0;
   }
 }
+
+/* plain text list of lab alums */
+ul.alums {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 5px 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.alums > li {
+  padding: 3px 0;
+}
+
+.alum-year {
+  opacity: 0.65;
+  font-size: 0.9rem;
+}

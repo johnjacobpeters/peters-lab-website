@@ -15,13 +15,36 @@ confocal and electron microscopy.
 {% include section.html %}
 
 {% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" %}
-{% include list.html data="members" component="portrait" filter="role != 'principal-investigator' and group != 'alum'" %}
+
+{% comment %}
+  Current members, grouped by class year (soonest to graduate first) and
+  alphabetical by name within each year.
+{% endcomment %}
+{% assign current = site.members | where_exp: "m", "m.role != 'principal-investigator'" | where_exp: "m", "m.group != 'alum'" %}
+{% assign years = current | group_by: "class-year" | sort: "name" %}
+{% for year in years %}
+  {% assign people = year.items | sort: "name" %}
+  {% for member in people %}
+    {% include portrait.html lookup=member.slug %}
+  {% endfor %}
+{% endfor %}
 
 {% include section.html %}
 
 ## Lab Alums
 
-{% include list.html data="members" component="portrait" filter="group == 'alum'" style="small" %}
+{% assign alums = site.members | where_exp: "m", "m.group == 'alum'" %}
+{% assign alum_years = alums | group_by: "class-year" | sort: "name" | reverse %}
+<ul class="alums">
+{% for year in alum_years %}
+  {% assign people = year.items | sort: "name" %}
+  {% for member in people %}
+  <li>
+    <a href="{{ member.url | relative_url }}">{{ member.name }}</a>{% if member.class-year %} <span class="alum-year">Class of {{ member.class-year }}</span>{% endif %}
+  </li>
+  {% endfor %}
+{% endfor %}
+</ul>
 
 {% include section.html background="images/background.jpg" dark=true %}
 

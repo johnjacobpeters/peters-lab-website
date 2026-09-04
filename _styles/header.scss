@@ -1,9 +1,9 @@
 ---
 ---
 
-$logo-big: 80px;
+$logo-big: 56px;
 $logo: 40px;
-$big-padding: 100px;
+$big-padding: 55px;
 $collapse: 700px;
 $sticky: true;
 
@@ -40,11 +40,14 @@ header a {
 
 .logo {
   height: $logo;
+  flex-shrink: 0;
 }
 
 .logo > * {
-  width: unset;
+  width: auto;
   height: 100%;
+  max-width: none;
+  object-fit: contain;
 }
 
 .title-text {
@@ -159,7 +162,7 @@ header[data-big] {
   }
 
   .title {
-    font-size: var(--xxl);
+    font-size: var(--xl);
   }
 
   .subtitle {

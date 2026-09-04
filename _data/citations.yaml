@@ -18,6 +18,7 @@
   tags:
   - science education
   - generative AI
+  image: images/projects/genai-blooms.png
 - id: doi:10.1016/j.celrep.2024.114026
   title: Beyond the MUN domain, Munc13 controls priming and depriming of synaptic
     vesicles
@@ -45,8 +46,11 @@
   date: '2024-04-25'
   link: https://doi.org/g9xd38
   orcid: 0000-0002-3192-7824
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: images/posts/environmental-justice-case-study.jpg
+  tags:
+  - science education
 - title: New and Improved methods to isolate, purify, and functionally test specific
     synaptic vesicles
   publisher: Nature Protocols
@@ -89,8 +93,11 @@
   date: '2022-06-01'
   link: https://doi.org/g9xd4b
   orcid: 0000-0002-3192-7824
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: images/citations/subtomogram-averaging.jpg
+  tags:
+  - cryo-EM
 - id: doi:10.1038/s41586-022-04543-1
   title: Inhibition of calcium-triggered secretion by hydrocarbon-stapled peptides
   authors:
@@ -127,15 +134,19 @@
   date: '2021-10-15'
   link: https://doi.org/gm54hh
   orcid: 0000-0002-3192-7824
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: images/citations/ampa-vesicle-proteome.jpg
+  tags:
+  - synaptic biology
 - title: Getting students excited about introductory biology
   authors:
   - John Jacob Peters
   publisher: ASBMB Today
-  date: '2026-04-08'
+  date: 2026-04-08
   link: https://www.asbmb.org/asbmb-today/opinions/040826/getting-students-excited-introductory-biology
   tags:
   - science education
   plugin: sources.py
   file: sources.yaml
+  image: images/posts/asbmb-today-perspective.jpg

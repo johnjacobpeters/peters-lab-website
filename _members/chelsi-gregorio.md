@@ -1,7 +1,7 @@
 ---
 name: Chelsi Gregorio
 description: Undergraduate Researcher
-role: undergrad
 group: alum
+role: undergrad
 affiliation: University of Richmond
 ---
