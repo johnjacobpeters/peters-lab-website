@@ -1,1 +1,1 @@
-Sitemap: https://johnjacobpeters.github.io/peters-lab-website/sitemap.xml
+Sitemap: http://new.johnpeterslab.com/sitemap.xml
