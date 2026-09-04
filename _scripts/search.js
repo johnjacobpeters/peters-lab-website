@@ -89,7 +89,49 @@
       } else element.style.display = "none";
     }
 
+    hideEmptyGroupHeadings();
+
     return [x, n, tags];
+  };
+
+  // hide year headings whose items were all filtered out, and show them again
+  // when at least one item under them is visible
+  const hideEmptyGroupHeadings = () => {
+    for (const heading of document.querySelectorAll("h3[id]")) {
+      let hasVisible = false;
+      let sibling = heading.nextElementSibling;
+
+      // walk forward until the next heading
+      while (sibling && sibling.tagName !== "H3") {
+        const items = sibling.matches(elementSelector)
+          ? [sibling]
+          : sibling.querySelectorAll(elementSelector);
+        for (const item of items) {
+          if (item.style.display !== "none") {
+            hasVisible = true;
+            break;
+          }
+        }
+        if (hasVisible) break;
+        sibling = sibling.nextElementSibling;
+      }
+
+      // only touch headings that actually group filterable items
+      if (!hasVisible && !headingGroupsItems(heading)) continue;
+
+      heading.style.display = hasVisible ? "" : "none";
+    }
+  };
+
+  // whether a heading is followed by any filterable item before the next heading
+  const headingGroupsItems = (heading) => {
+    let sibling = heading.nextElementSibling;
+    while (sibling && sibling.tagName !== "H3") {
+      if (sibling.matches(elementSelector) || sibling.querySelector(elementSelector))
+        return true;
+      sibling = sibling.nextElementSibling;
+    }
+    return false;
   };
 
   // highlight search terms
