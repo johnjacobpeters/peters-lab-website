@@ -1,6 +1,6 @@
 ---
 name: John Jacob Peters
-image: images/photo.jpg
+image: images/john-peters.jpg
 description: Principal Investigator
 role: principal-investigator
 affiliation: University of Richmond

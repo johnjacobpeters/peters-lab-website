@@ -39,7 +39,11 @@ and why LTP breaks down in neurodegenerative diseases like Alzheimer's.
   text=text
 %}
 
-{% capture text %}
+{% include section.html %}
+
+{% capture col1 %}
+
+### Our Projects
 
 We combine single-particle cryo-electron microscopy, computational structural
 biology, an in vitro fusion assay, and cell imaging to work out how the AMPA
@@ -56,16 +60,9 @@ receptor delivery machinery is built and controlled.
 
 {% endcapture %}
 
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="projects"
-  title="Our Projects"
-  flip=true
-  text=text
-%}
+{% capture col2 %}
 
-{% capture text %}
+### Our Team
 
 Our lab is made up of undergraduate researchers at the University of Richmond.
 Students gain experience in molecular cloning, protein purification, introductory
@@ -82,10 +79,4 @@ computational structural biology, and confocal and electron microscopy.
 
 {% endcapture %}
 
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="team"
-  title="Our Team"
-  text=text
-%}
+{% include cols.html col1=col1 col2=col2 %}
