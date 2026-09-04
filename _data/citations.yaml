@@ -15,10 +15,10 @@
   orcid: 0000-0002-3192-7824
   plugin: sources.py
   file: sources.yaml
+  image: images/projects/genai-blooms.png
   tags:
   - science education
   - generative AI
-  image: images/projects/genai-blooms.png
 - id: doi:10.1016/j.celrep.2024.114026
   title: Beyond the MUN domain, Munc13 controls priming and depriming of synaptic
     vesicles
@@ -143,10 +143,10 @@
   authors:
   - John Jacob Peters
   publisher: ASBMB Today
-  date: 2026-04-08
+  date: '2026-04-08'
   link: https://www.asbmb.org/asbmb-today/opinions/040826/getting-students-excited-introductory-biology
+  image: images/posts/asbmb-today-perspective.jpg
   tags:
   - science education
   plugin: sources.py
   file: sources.yaml
-  image: images/posts/asbmb-today-perspective.jpg
