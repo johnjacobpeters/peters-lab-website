@@ -24,3 +24,17 @@
   tags:
     - science education
     - generative AI
+
+- title: Astrocyte dynamics in neuronal function
+  subtitle: Lipid transfer and reactive states
+  group: featured
+  description:
+    Astrocytes do more than support neurons — they shape synapses, regulate
+    neurotransmitter levels, and remodel their own membranes as circuits change.
+    We are studying bridge-like lipid transfer proteins (BLTPs), which move
+    lipids between organelle membranes, and how astrocytes shift into reactive
+    states that change the support they give neurons in injury and
+    neurodegenerative disease.
+  tags:
+    - astrocytes
+    - lipid transfer
