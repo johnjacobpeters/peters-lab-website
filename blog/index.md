@@ -1,13 +1,13 @@
 ---
-title: News
+title: Updates
 nav:
   order: 4
-  tooltip: Lab news and updates
+  tooltip: Recent news from the lab
 ---
 
-# {% include icon.html icon="fa-solid fa-feather-pointed" %}News
+# {% include icon.html icon="fa-solid fa-feather-pointed" %}Updates
 
-Updates from the lab.
+Recent news from the lab.
 
 {% include section.html %}
 

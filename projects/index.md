@@ -14,3 +14,9 @@ Ongoing research projects in the lab.
 {% include section.html %}
 
 {% include list.html component="card" data="projects" filter="group == 'featured'" %}
+
+{% include section.html %}
+
+## More
+
+{% include list.html component="card" data="projects" filter="!group" style="small" %}
