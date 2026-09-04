@@ -1,15 +1,21 @@
 # Manually-added publications and other citable works.
 #
 # Most publications are imported automatically from the lab's ORCID record
-# (see _data/orcid.yaml). Add an entry here only for works that ORCID misses,
-# or to attach an image, description, tags, or extra buttons to a paper.
-#
-# Example:
-#
-# - id: doi:10.1126/science.aaw8250
-#   description: A short summary of the paper.
-#   image: images/schematic.png
-#   tags:
-#     - cryo-EM
+# (see _data/orcid.yaml). Add an entry here for works ORCID misses, or to
+# attach an image, description, tags, or extra buttons to a paper.
 
-[]
+# Not yet in the ORCID record.
+- id: doi:10.1371/journal.pone.0346127
+  tags:
+    - science education
+    - generative AI
+
+# No DOI, so the metadata is given manually.
+- title: "Getting students excited about introductory biology"
+  authors:
+    - John Jacob Peters
+  publisher: ASBMB Today
+  date: 2026-04-08
+  link: https://www.asbmb.org/asbmb-today/opinions/040826/getting-students-excited-introductory-biology
+  tags:
+    - science education

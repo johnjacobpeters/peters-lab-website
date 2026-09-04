@@ -1,7 +1,7 @@
 ---
 name: John Jacob Peters
-image: images/john-peters.jpg
-description: Principal Investigator
+image: images/members/john-peters.jpg
+description: Assistant Professor of Biology
 role: principal-investigator
 affiliation: University of Richmond
 aliases:
@@ -18,7 +18,7 @@ links:
 
 John is an Assistant Professor of Biology at the University of Richmond, where
 he studies the molecular machinery that strengthens synapses during long-term
-potentiation.
+potentiation, and works to improve undergraduate biology education.
 
 He received his Ph.D. in Neuroscience from Stanford University in 2021 and
 served as a Curriculum Fellow at Harvard Medical School before joining the

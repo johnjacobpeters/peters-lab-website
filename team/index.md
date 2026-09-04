@@ -2,20 +2,26 @@
 title: Team
 nav:
   order: 3
-  tooltip: About our team
+  tooltip: Meet the lab
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
+# {% include icon.html icon="fa-solid fa-users" %}Meet The Lab
 
-The Peters Lab is a group of undergraduate researchers and faculty at the
-University of Richmond. Students in the lab gain hands-on experience in
-molecular cloning, protein purification, introductory computational structural
-biology, and confocal and electron microscopy.
+The Peters Lab is a group of undergraduate and post-baccalaureate researchers at
+the University of Richmond. Students in the lab gain experience in molecular
+cloning, protein purification, introductory computational structural biology, and
+confocal and electron microscopy.
 
 {% include section.html %}
 
 {% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" %}
-{% include list.html data="members" component="portrait" filter="role != 'principal-investigator'" %}
+{% include list.html data="members" component="portrait" filter="role != 'principal-investigator' and group != 'alum'" %}
+
+{% include section.html %}
+
+## Lab Alums
+
+{% include list.html data="members" component="portrait" filter="group == 'alum'" style="small" %}
 
 {% include section.html background="images/background.jpg" dark=true %}
 

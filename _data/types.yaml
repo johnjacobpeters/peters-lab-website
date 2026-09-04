@@ -6,6 +6,10 @@ principal-investigator:
   icon: fa-solid fa-microscope
   description: Principal Investigator
 
+postbac:
+  icon: fa-solid fa-flask
+  description: Post-bacc Researcher
+
 postdoc:
   icon: fa-solid fa-glasses
   description: Postdoctoral Researcher

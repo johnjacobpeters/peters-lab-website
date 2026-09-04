@@ -2,19 +2,26 @@
 title: Contact
 nav:
   order: 5
-  tooltip: Email, address, and location
+  tooltip: Email, booking, and address
 ---
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-Interested in joining the lab, collaborating, or learning more about our work?
-We would love to hear from you.
+I am looking forward to hearing from you!
+
+If you would like to book a meeting with me, please use the link below.
 
 {%
   include button.html
   type="email"
   text="john.peters@richmond.edu"
   link="john.peters@richmond.edu"
+%}
+{%
+  include button.html
+  icon="fa-regular fa-calendar"
+  text="Book a meeting"
+  link="https://johnpeters.youcanbook.me/"
 %}
 {%
   include button.html
@@ -26,7 +33,7 @@ We would love to hear from you.
 {% include section.html dark=true %}
 
 {% capture col1 %}
-**Peters Lab**  
+**The Peters Lab**  
 Department of Biology  
 University of Richmond
 {% endcapture %}
