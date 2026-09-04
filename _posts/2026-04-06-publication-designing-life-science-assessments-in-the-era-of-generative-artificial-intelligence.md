@@ -1,5 +1,6 @@
 ---
 title: "Publication: Designing life science assessments in the era of generative artificial intelligence"
+image: images/posts/genai-assessments.png
 last_modified_at: 2026-04-06
 tags:
   - publications

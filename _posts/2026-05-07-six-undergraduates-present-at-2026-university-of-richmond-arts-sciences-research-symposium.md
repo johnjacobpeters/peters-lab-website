@@ -1,5 +1,6 @@
 ---
 title: "Six undergraduates present at 2026 University of Richmond Arts & Sciences Research Symposium"
+image: images/posts/research-symposium-2026.jpg
 last_modified_at: 2026-05-07
 tags:
   - students

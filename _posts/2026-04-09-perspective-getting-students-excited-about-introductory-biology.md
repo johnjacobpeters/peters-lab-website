@@ -1,5 +1,6 @@
 ---
 title: "Perspective: Getting students excited about introductory biology"
+image: images/posts/asbmb-today-perspective.jpg
 last_modified_at: 2026-04-09
 tags:
   - science education

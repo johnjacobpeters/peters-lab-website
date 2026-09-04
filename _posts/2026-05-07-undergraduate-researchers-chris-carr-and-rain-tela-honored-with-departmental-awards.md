@@ -1,5 +1,6 @@
 ---
 title: "Undergraduate researchers, Chris Carr and Rain Tela, honored with departmental awards"
+image: images/posts/arts-and-sciences.jpg
 last_modified_at: 2026-05-07
 tags:
   - awards

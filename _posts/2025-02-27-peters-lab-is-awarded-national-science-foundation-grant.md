@@ -1,5 +1,6 @@
 ---
 title: "Peters Lab is Awarded National Science Foundation Grant"
+image: images/posts/nsf-grant.png
 last_modified_at: 2025-02-27
 tags:
   - funding

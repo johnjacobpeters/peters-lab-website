@@ -1,5 +1,6 @@
 ---
 title: "Ismar Alickovic presents at American Society for Biochemistry and Molecular Biology Annual Meeting"
+image: images/posts/asbmb-annual-meeting.jpg
 last_modified_at: 2026-04-06
 tags:
   - students

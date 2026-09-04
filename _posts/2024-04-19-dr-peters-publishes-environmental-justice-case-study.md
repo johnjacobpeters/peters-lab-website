@@ -1,5 +1,6 @@
 ---
 title: "Dr. Peters publishes environmental justice case study"
+image: images/posts/environmental-justice-case-study.jpg
 last_modified_at: 2024-04-19
 tags:
   - publications
