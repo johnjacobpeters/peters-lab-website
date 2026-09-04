@@ -7,12 +7,14 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Recent publications from the lab:
+We study how the connections between neurons are strengthened during long-term
+potentiation, and how that machinery breaks down in neurodegenerative disease.
+
 {% include section.html %}
 
 ## Highlighted
 
-{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
+{% include citation.html lookup="doi:10.3389/fnmol.2021.754631" style="rich" %}
 
 {% include section.html %}
 
