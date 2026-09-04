@@ -4,7 +4,7 @@
 # (see _data/orcid.yaml). Add an entry here for works ORCID misses, or to
 # attach an image, description, tags, or extra buttons to a paper.
 
-# Not yet in the ORCID record.
+# Also imported from ORCID; listed here only to attach tags.
 - id: doi:10.1371/journal.pone.0346127
   tags:
     - science education
