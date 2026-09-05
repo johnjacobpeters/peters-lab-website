@@ -73,4 +73,27 @@
   display: none;
 }
 
+/* social link under a portrait, outside the portrait's own anchor.
+   the wrapper is normally display:contents so portraits flow in the parent's
+   layout; when it carries a link it has to become a real box, or the link
+   would land in that layout as a sibling of the portrait. */
+.portrait-wrapper:has(.portrait-links) {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.portrait-wrapper:has(.portrait-links) .portrait {
+  margin-bottom: 0;
+}
+
+.portrait-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 0 20px 0;
+  font-size: 1.1rem;
+}
+
 /*# sourceMappingURL=portrait.css.map */
