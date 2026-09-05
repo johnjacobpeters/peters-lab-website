@@ -6,4 +6,6 @@ class-year: 2026
 group: alum
 role: undergrad
 affiliation: University of Richmond
+links:
+  linkedin: mollywise
 ---

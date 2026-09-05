@@ -10,6 +10,7 @@ aliases:
   - J. J. Peters
   - J Peters
 links:
+  linkedin: johnjpeters
   email: john.peters@richmond.edu
   orcid: 0000-0002-3192-7824
   google-scholar: Roln4goAAAAJ

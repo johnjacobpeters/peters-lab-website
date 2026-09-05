@@ -48,4 +48,19 @@
       </span>
     {% endif %}
   </a>
+
+  {% comment %}
+    Sits outside the portrait anchor above, since anchors cannot be nested.
+  {% endcomment %}
+  {% if member.links.linkedin and include.style != "tiny" %}
+    <div class="portrait-links">
+      {%
+        include button.html
+        type="linkedin"
+        link=member.links.linkedin
+        text=""
+        style="bare"
+      %}
+    </div>
+  {% endif %}
 </div>

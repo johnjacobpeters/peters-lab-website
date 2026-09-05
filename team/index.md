@@ -64,7 +64,7 @@ confocal and electron microscopy.
     {% assign slug = key | split: "|" | last %}
     {% assign member = site.members | where: "slug", slug | first %}
   <li>
-    <a href="{{ member.url | relative_url }}">{{ member.name }}</a>{% if member.class-year %} <span class="alum-year">Class of {{ member.class-year }}</span>{% endif %}
+    <a href="{{ member.url | relative_url }}">{{ member.name }}</a>{% if member.class-year %} <span class="alum-year">Class of {{ member.class-year }}</span>{% endif %}{% if member.links.linkedin %} <a class="alum-linkedin" href="https://www.linkedin.com/in/{{ member.links.linkedin }}" data-tooltip="LinkedIn" aria-label="{{ member.name }} on LinkedIn">{% include icon.html icon="fa-brands fa-linkedin" %}</a>{% endif %}
   </li>
   {% endfor %}
 {% endfor %}
