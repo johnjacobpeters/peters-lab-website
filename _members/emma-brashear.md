@@ -6,4 +6,6 @@ class-year: 2027
 group: alum
 role: undergrad
 affiliation: University of Richmond
+links:
+  linkedin: emma-brashear-10076527a
 ---
