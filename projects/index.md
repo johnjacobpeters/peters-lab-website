@@ -13,4 +13,6 @@ Ongoing research projects in the lab.
 
 {% include section.html %}
 
+<div class="cards-row" markdown="0">
 {% include list.html component="card" data="projects" filter="group == 'featured'" %}
+</div>

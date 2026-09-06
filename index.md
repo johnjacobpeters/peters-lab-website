@@ -64,6 +64,30 @@ teach transferrable molecular biology skills.
 
 {% capture col2 %}
 
+### Astrocyte dynamics in neuronal function
+
+Astrocytes do more than support neurons — they shape synapses and remodel their
+own membranes as circuits change. We study bridge-like lipid transfer proteins
+(BLTPs), and how astrocytes shift into reactive states that change the support
+they give neurons.
+
+{%
+  include button.html
+  link="projects"
+  text="Browse our projects"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+  style="bare"
+%}
+
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 %}
+
+{% include section.html %}
+
+{% capture col1 %}
+
 ### Meet the lab
 
 Our lab is made up of undergraduate and post-baccalaureate researchers at the
@@ -82,11 +106,11 @@ electron microscopy.
 
 {% endcapture %}
 
-{% include cols.html col1=col1 col2=col2 %}
+{% capture col2 %}
 
-{% include section.html %}
+### Recent news from the lab
 
-## Recent news from the lab
+Awards, conference presentations, and new papers from the lab.
 
 {%
   include button.html
@@ -94,4 +118,9 @@ electron microscopy.
   text="Read the latest updates"
   icon="fa-solid fa-arrow-right"
   flip=true
+  style="bare"
 %}
+
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 %}
