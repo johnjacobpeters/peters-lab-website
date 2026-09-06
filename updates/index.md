@@ -1,5 +1,7 @@
 ---
 title: Updates
+redirect_from:
+  - /blog/
 nav:
   order: 4
   tooltip: Recent news from the lab

@@ -1,5 +1,8 @@
 ---
 title: Team
+redirect_from:
+  - /lab-members
+  - /lab-members/
 nav:
   order: 3
   tooltip: Meet the lab

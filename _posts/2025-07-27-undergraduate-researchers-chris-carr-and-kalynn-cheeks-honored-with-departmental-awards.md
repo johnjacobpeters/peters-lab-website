@@ -1,6 +1,9 @@
 ---
 title: "Undergraduate researchers, Chris Carr and Kalynn Cheeks, honored with departmental awards"
 image: images/posts/arts-and-sciences.jpg
+redirect_from:
+  - /post/undergraduate-researchers-chris-carr-and-kalynn-cheeks-honored-with-departmental-awards
+  - /post/undergraduate-researchers-chris-carr-and-kalynn-cheeks-honored-with-departmental-awards/
 last_modified_at: 2025-07-27
 tags:
   - awards

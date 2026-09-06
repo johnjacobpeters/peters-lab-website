@@ -90,7 +90,7 @@ electron microscopy.
 
 {%
   include button.html
-  link="blog"
+  link="updates"
   text="Read the latest updates"
   icon="fa-solid fa-arrow-right"
   flip=true

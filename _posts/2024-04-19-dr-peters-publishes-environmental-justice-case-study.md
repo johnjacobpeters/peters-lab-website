@@ -1,6 +1,9 @@
 ---
 title: "Dr. Peters publishes environmental justice case study"
 image: images/posts/environmental-justice-case-study.jpg
+redirect_from:
+  - /post/prof-peters-publishes-environmental-justice-case-study
+  - /post/prof-peters-publishes-environmental-justice-case-study/
 last_modified_at: 2024-04-19
 tags:
   - publications
