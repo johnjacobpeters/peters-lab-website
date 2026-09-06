@@ -1,5 +1,10 @@
 ---
 title: Research
+redirect_from:
+  - /biology-research
+  - /biology-research/
+  - /sotl-research
+  - /sotl-research/
 nav:
   order: 1
   tooltip: Biology and science education research

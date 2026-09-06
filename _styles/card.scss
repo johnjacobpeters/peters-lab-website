@@ -50,3 +50,15 @@
   margin-top: -10px !important;
   font-style: italic;
 }
+
+/* Sections lay out content in a 1000px column, which three cards at the
+   default 350px + 20px margins overflow, so they wrapped 2 + 1. Narrow them
+   once that full column exists (viewport >= 1080px) so a row of three fits.
+   Below that the column is narrower than three cards can use, so the default
+   width stays and they wrap as before. */
+@media (min-width: 1100px) {
+  .card {
+    width: 300px;
+    margin: 10px;
+  }
+}

@@ -1,14 +1,25 @@
-# citation metadata for the template itself
+# citation metadata for this website
 
-title: "Lab Website Template"
-version: 1.3.7
-date-released: 2025-07-31
-url: "https://github.com/greenelab/lab-website-template"
-authors:
-  - family-names: "Rubinetti"
-    given-names: "Vincent"
-    orcid: "https://orcid.org/0000-0002-4655-3773"
-  - family-names: "Greene"
-    given-names: "Casey"
-    orcid: "https://orcid.org/0000-0001-8713-9213"
 cff-version: 1.2.0
+title: "The Peters Lab"
+message: "If you refer to this website, please cite it as below."
+type: software
+url: "https://new.johnpeterslab.com"
+repository-code: "https://github.com/johnjacobpeters/peters-lab-website"
+authors:
+  - family-names: "Peters"
+    given-names: "John Jacob"
+    orcid: "https://orcid.org/0000-0002-3192-7824"
+    affiliation: "University of Richmond"
+references:
+  - type: software
+    title: "Lab Website Template"
+    notes: "This website is built with the Lab Website Template."
+    url: "https://github.com/greenelab/lab-website-template"
+    authors:
+      - family-names: "Rubinetti"
+        given-names: "Vincent"
+        orcid: "https://orcid.org/0000-0002-4655-3773"
+      - family-names: "Greene"
+        given-names: "Casey"
+        orcid: "https://orcid.org/0000-0001-8713-9213"
