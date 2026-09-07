@@ -12,19 +12,6 @@
     - cryo-EM
     - synaptic biology
 
-- title: Improving biology education
-  subtitle: Generative AI and course-based research experiences
-  group: featured
-  image: images/projects/genai-blooms.png
-  description:
-    Assessing the impact of generative AI on science education, and designing and
-    assessing course-based undergraduate research experiences that teach
-    transferrable molecular biology skills. Students working on these projects
-    learn to collect and analyze qualitative data.
-  tags:
-    - science education
-    - generative AI
-
 - title: Astrocyte dynamics in neuronal function
   subtitle: Lipid transfer and reactive states
   group: featured
@@ -38,3 +25,16 @@
   tags:
     - astrocytes
     - lipid transfer
+- title: Improving biology education
+  subtitle: Generative AI and course-based research experiences
+  group: featured
+  image: images/projects/genai-blooms.png
+  description:
+    Assessing the impact of generative AI on science education, and designing and
+    assessing course-based undergraduate research experiences that teach
+    transferrable molecular biology skills. Students working on these projects
+    learn to collect and analyze qualitative data.
+  tags:
+    - science education
+    - generative AI
+
