@@ -44,26 +44,6 @@ down in neurodegenerative diseases like Alzheimer's.
 
 {% capture col1 %}
 
-### Improving biology education
-
-The Peters Lab also strives to improve undergraduate biology education. Efforts
-in this space include assessing the impact of generative AI on science education
-and designing and assessing course-based undergraduate research experiences that
-teach transferrable molecular biology skills.
-
-{%
-  include button.html
-  link="research"
-  text="Science education research"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{% capture col2 %}
-
 ### Astrocyte dynamics in neuronal function
 
 Astrocytes do more than support neurons — they shape synapses and remodel their
@@ -75,6 +55,26 @@ they give neurons.
   include button.html
   link="projects"
   text="Browse our projects"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+  style="bare"
+%}
+
+{% endcapture %}
+
+{% capture col2 %}
+
+### Improving biology education
+
+The Peters Lab also strives to improve undergraduate biology education. Efforts
+in this space include assessing the impact of generative AI on science education
+and designing and assessing course-based undergraduate research experiences that
+teach transferrable molecular biology skills.
+
+{%
+  include button.html
+  link="research"
+  text="Science education research"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
