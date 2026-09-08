@@ -46,10 +46,10 @@ down in neurodegenerative diseases like Alzheimer's.
 
 ### Astrocyte dynamics in neuronal function
 
-Astrocytes do more than support neurons — they shape synapses and remodel their
-own membranes as circuits change. We study bridge-like lipid transfer proteins
-(BLTPs), and how astrocytes shift into reactive states that change the support
-they give neurons.
+Astrocytes play an essential role in the development of the nervous system and
+in disease. They shape synapses and remodel their own membranes as circuits
+change. We study bridge-like lipid transfer proteins (BLTPs), and how astrocytes
+shift into reactive states that change the support they give neurons.
 
 {%
   include button.html
