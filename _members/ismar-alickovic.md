@@ -1,5 +1,6 @@
 ---
 name: Ismar Alickovic
+image: images/members/ismar-alickovic.jpg
 description: Post-bacc researcher, Class of 2024
 class-year: 2024
 role: postbac
