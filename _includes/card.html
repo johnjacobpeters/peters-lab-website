@@ -1,10 +1,22 @@
 {{ " " }}
+{% comment %}
+  Emit an anchor only when there is somewhere to go. An anchor with no
+  href is not focusable and screen readers announce it as a link with no
+  destination. These elements are flex children, so their display is
+  blockified either way and the swap does not affect layout.
+{% endcomment %}
+{% if include.link %}
+  {% assign card_tag = "a" %}
+{% else %}
+  {% assign card_tag = "span" %}
+{% endif %}
+
 <div class="card" data-style="{{ include.style }}">
-  <a
+  <{{ card_tag }}
     {% if include.link %}
       href="{{ include.link | relative_url | uri_escape }}"
+      aria-label="{{ include.title | default: "card link" | regex_strip }}"
     {% endif %}
-    aria-label="{{ include.title | default: "card link" | regex_strip }}"
     class="card-image"
   >
     <img
@@ -13,11 +25,11 @@
       loading="lazy"
       {% include fallback.html %}
     >
-  </a>
+  </{{ card_tag }}>
 
   <div class="card-text">
     {% if include.title %}
-      <a
+      <{{ card_tag }}
         {% if include.link %}
           href="{{ include.link | relative_url | uri_escape }}"
         {% endif %}
@@ -27,7 +39,7 @@
         class="card-title"
       >
         {{ include.title }}
-    </a>
+    </{{ card_tag }}>
     {% endif %}
 
     {% if include.subtitle %}

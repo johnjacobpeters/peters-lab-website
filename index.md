@@ -1,6 +1,8 @@
 ---
 ---
 
+<h1 class="visually-hidden" markdown="0">The Peters Lab — the Learning &amp; Memory Lab at the University of Richmond</h1>
+
 ## Highlights
 
 {% capture text %}

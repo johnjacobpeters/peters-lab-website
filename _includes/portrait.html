@@ -9,14 +9,26 @@
 
 {% assign type = site.data.types[member.role] %}
 
+{% comment %}
+  On a member's own page there is nothing to link to, so render a span
+  rather than an anchor with no href: such an anchor is not focusable and
+  screen readers announce it as a link with no destination. .portrait sets
+  its own display, so the element swap does not affect layout.
+{% endcomment %}
+{% if page.slug != member.slug %}
+  {% assign portrait_tag = "a" %}
+{% else %}
+  {% assign portrait_tag = "span" %}
+{% endif %}
+
 <div class="portrait-wrapper">
-  <a
-    {% if page.slug != member.slug %}
+  <{{ portrait_tag }}
+    {% if portrait_tag == "a" %}
       href="{{ member.url | relative_url | uri_escape }}"
+      aria-label="{{ member.name | default: "member link" | regex_strip }}"
     {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
-    aria-label="{{ member.name | default: "member link" | regex_strip }}"
   >
     {% if type %}
       {% include icon.html icon=type.icon %}
@@ -47,7 +59,7 @@
         {{ member.affiliation }}
       </span>
     {% endif %}
-  </a>
+  </{{ portrait_tag }}>
 
   {% comment %}
     Sits outside the portrait anchor above, since anchors cannot be nested.
