@@ -9,6 +9,14 @@
 
 {% assign title = title | xml_escape %}
 
+{% comment %}
+  Pages with no title of their own (the home page) left the social and
+  schema tags empty, so sharing the site showed a blank title. Fall back
+  to the site title for those; the <title> element already composes
+  page and site titles itself and is left alone.
+{% endcomment %}
+{% assign metatitle = title | default: site.title | xml_escape %}
+
 {% assign fulltitle = "" | split: "," %}
 {% if title and title != "" %}
   {% assign fulltitle = fulltitle | push: title %}
@@ -51,17 +59,17 @@
 
 <link rel="icon" href="{{ icon }}">
 
-<meta name="title" content="{{ title }}">
+<meta name="title" content="{{ metatitle }}">
 <meta name="description" content="{{ description }}">
 
-<meta property="og:title" content="{{ title }}">
+<meta property="og:title" content="{{ metatitle }}">
 <meta property="og:site_title" content="{{ site.title | xml_escape }}">
 <meta property="og:description" content="{{ description }}">
 <meta property="og:url" content="{{ url }}">
 <meta property="og:image" content="{{ share }}">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="{{ title }}">
+<meta property="twitter:title" content="{{ metatitle }}">
 <meta property="twitter:description" content="{{ description }}">
 <meta property="twitter:url" content="{{ url }}">
 <meta property="twitter:card" content="summary_large_image">
@@ -89,9 +97,9 @@
     {% else %}
       "@type": "WebSite",
     {% endif %}
-    "name": "{{ title }}",
+    "name": "{{ metatitle }}",
     "description": "{{ description }}",
-    "headline": "{{ title }}",
+    "headline": "{{ metatitle }}",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "{{ icon }}" }

@@ -8,7 +8,7 @@
     class="card-image"
   >
     <img
-      src="{{ include.image | relative_url | uri_escape }}"
+      src="{{ include.image | default: "images/fallback.svg" | relative_url | uri_escape }}"
       alt="{{ include.title | default: "card image" | regex_strip }}"
       loading="lazy"
       {% include fallback.html %}
