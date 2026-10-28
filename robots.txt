@@ -1,1 +1,1 @@
-Sitemap: http://johnpeterslab.com/sitemap.xml
+Sitemap: https://johnpeterslab.com/sitemap.xml
