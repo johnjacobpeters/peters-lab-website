@@ -1,12 +1,6 @@
 ---
 ---
 
-# The Peters Lab
-
-The Learning & Memory Lab at the University of Richmond
-
-{% include section.html %}
-
 ## Highlights
 
 {% capture text %}
@@ -19,7 +13,7 @@ Delivering AMPA receptors involves a complex molecular machine made up of severa
 proteins. The Peters Lab aims to determine the arrangement of proteins within
 this molecular machine and describe how the machinery is regulated. A better
 understanding of LTP will help us understand how people learn and why LTP breaks
-down in neurodegenerative diseases like Alzheimer's.
+down in several neurological disorders.
 
 {%
   include button.html
@@ -34,7 +28,7 @@ down in neurodegenerative diseases like Alzheimer's.
 
 {%
   include feature.html
-  image="images/schematic.png"
+  image="images/memory-formation.webp"
   link="research"
   title="Molecular mechanisms of memory formation"
   text=text
@@ -48,7 +42,7 @@ down in neurodegenerative diseases like Alzheimer's.
 
 Astrocytes play an essential role in the development of the nervous system and
 in disease. They shape synapses and remodel their own membranes as circuits
-change. We study bridge-like lipid transfer proteins (BLTPs), and how astrocytes
+change. We study bridge-like lipid transfer proteins (BLTPs) and how astrocytes
 shift into reactive states that change the support they give neurons.
 
 {%
