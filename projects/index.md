@@ -7,8 +7,6 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
-Ongoing research projects in the lab.
-
 {% include search-info.html %}
 
 {% include section.html %}
