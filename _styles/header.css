@@ -147,4 +147,34 @@ header[data-big] .subtitle {
   font-size: var(--large);
 }
 
+/* The home page's large header took 44% of a phone viewport, leaving almost
+   nothing above the fold. Tighten it on small screens: less padding, a smaller
+   logo, and type that stops the subtitle and nav from wrapping onto so many
+   lines. Other pages use the collapsed header and are unaffected. */
+@media (max-width: 700px) {
+  header[data-big] {
+    padding: 24px 20px;
+    gap: 12px;
+  }
+  header[data-big] .home {
+    gap: 8px;
+  }
+  header[data-big] .logo {
+    height: 44px;
+  }
+  header[data-big] .title {
+    font-size: var(--large);
+  }
+  header[data-big] .subtitle {
+    font-size: 0.95rem;
+  }
+  header[data-big] nav {
+    gap: 4px 10px;
+    font-size: 0.9rem;
+  }
+  header[data-big] nav > a {
+    padding: 3px;
+  }
+}
+
 /*# sourceMappingURL=header.css.map */
