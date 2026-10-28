@@ -18,7 +18,7 @@ down in several neurological disorders.
 {%
   include button.html
   link="research"
-  text="See our research"
+  text="See our publications"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
