@@ -23,7 +23,7 @@
     {% endif %}
 
     <img
-      src="{{ member.image | relative_url | uri_escape }}"
+      src="{{ member.image | default: "images/fallback.svg" | relative_url | uri_escape }}"
       class="portrait-image"
       alt="{{ member.name | default: "member" | regex_strip }}"
       loading="lazy"

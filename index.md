@@ -65,15 +65,6 @@ in this space include assessing the impact of generative AI on science education
 and designing and assessing course-based undergraduate research experiences that
 teach transferrable molecular biology skills.
 
-{%
-  include button.html
-  link="research"
-  text="Science education research"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 %}
