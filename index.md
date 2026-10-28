@@ -34,7 +34,7 @@ down in neurodegenerative diseases like Alzheimer's.
 
 {%
   include feature.html
-  image="images/schematic.png"
+  image="images/memory-formation.webp"
   link="research"
   title="Molecular mechanisms of memory formation"
   text=text
