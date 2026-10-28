@@ -1,3 +1,15 @@
-<!--
-  put your analytics (e.g. Google Analytics) tracking code here
--->
+{% comment %}
+  GoatCounter. Privacy-friendly: no cookies, no cross-site tracking and no
+  personal data, so the site needs no consent banner. Stats live at
+  https://johnjacobpeters.goatcounter.com
+
+  count.js skips localhost and private network addresses by default, so
+  local previews are not counted. It is loaded over https rather than with
+  the protocol-relative //gc.zgo.at that GoatCounter's own snippet uses,
+  since the site is https-only.
+{% endcomment %}
+<script
+  data-goatcounter="https://johnjacobpeters.goatcounter.com/count"
+  async
+  src="https://gc.zgo.at/count.js"
+></script>
