@@ -5,6 +5,6 @@
 
   # johnjacobpeters's Website
 
-  Visit **[johnpeterslab.com](http://johnpeterslab.com)** 🚀
+  Visit **[johnpeterslab.com](https://johnpeterslab.com)** 🚀
 
   _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
