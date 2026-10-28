@@ -6,6 +6,11 @@
 
 # --- Biology research ---
 
+- id: doi:10.64898/2026.10.15.759244
+  tags:
+    - synaptic biology
+    - SNARE
+
 - id: doi:10.1016/j.jsb.2022.107851
   image: images/citations/subtomogram-averaging.jpg
   tags:

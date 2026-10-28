@@ -9,8 +9,6 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-feather-pointed" %}Updates
 
-Recent news from the lab.
-
 {% include section.html %}
 
 {% include search-box.html %}

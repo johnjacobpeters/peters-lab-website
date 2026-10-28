@@ -1,19 +1,18 @@
 ---
-title: Research
+title: Publications
 redirect_from:
   - /biology-research
   - /biology-research/
   - /sotl-research
   - /sotl-research/
+  - /publications
+  - /publications/
 nav:
   order: 1
-  tooltip: Biology and science education research
+  tooltip: Biology and science education publications
 ---
 
-# {% include icon.html icon="fa-solid fa-microscope" %}Research
-
-The lab works in two areas: the structural biology of learning and memory, and
-research on undergraduate science education.
+# {% include icon.html icon="fa-solid fa-microscope" %}Publications
 
 {% include section.html %}
 
@@ -29,6 +28,7 @@ this molecular machine and describe how the machinery is regulated. The lab uses
 single-particle cryo-electron microscopy, computational structural biology, an in
 vitro fusion assay, and cell imaging approaches to address this question.
 
+{% include citation.html lookup="doi:10.64898/2026.10.15.759244" style="rich" %}
 {% include citation.html lookup="doi:10.1016/j.jsb.2022.107851" style="rich" %}
 {% include citation.html lookup="doi:10.3389/fnmol.2021.754631" style="rich" %}
 
