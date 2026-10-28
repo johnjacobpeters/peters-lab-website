@@ -8,15 +8,27 @@
   {% assign citation = include %}
 {% endif %}
 
+{% comment %}
+  Emit an anchor only when the citation has a link. An anchor with no href
+  is not focusable and screen readers announce it as a link with no
+  destination. Both elements are flex children, so their display is
+  blockified either way and the swap does not affect layout.
+{% endcomment %}
+{% if citation.link %}
+  {% assign cite_tag = "a" %}
+{% else %}
+  {% assign cite_tag = "span" %}
+{% endif %}
+
 <div class="citation-container">
   <div class="citation">
     {% if include.style == "rich" %}
-      <a
+      <{{ cite_tag }}
         {% if citation.link %}
           href="{{ citation.link | relative_url | uri_escape }}"
+          aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
         {% endif %}
         class="citation-image"
-        aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
       >
         <img
           src="{{ citation.image | default: "images/fallback.svg" | relative_url | uri_escape }}"
@@ -24,21 +36,21 @@
           loading="lazy"
           {% include fallback.html %}
         >
-      </a>
+      </{{ cite_tag }}>
     {% endif %}
 
     <div class="citation-text">
       {% assign type = site.data.types[citation.type] %}
       {% include icon.html icon=type.icon %}
 
-      <a
+      <{{ cite_tag }}
         {% if citation.link %}
           href="{{ citation.link | relative_url | xml_escape }}"
         {% endif %}
         class="citation-title"
       >
         {{ citation.title | default: "[no title info]" }}
-      </a>
+      </{{ cite_tag }}>
 
       <div
         class="citation-authors"

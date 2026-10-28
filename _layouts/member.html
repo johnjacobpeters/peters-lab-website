@@ -16,6 +16,13 @@ layout: default
 
 {% endcapture %}
 
+{% comment %}
+  The member's name only appears as a styled span inside the portrait, so
+  the page had no h1 at all. Add one for screen readers and crawlers
+  without changing what is drawn.
+{% endcomment %}
+<h1 class="visually-hidden">{{ page.name | default: page.title }}</h1>
+
 {% include float.html content=floatcontent %}
 
 {{ content }}
